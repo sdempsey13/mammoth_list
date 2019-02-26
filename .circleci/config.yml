@@ -31,7 +31,7 @@ jobs:
           name: install dependencies
           command: |
             python -m venv venv
-            . virtualenv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
 
       - save_cache:
@@ -47,7 +47,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            . virtualenv/bin/activate
+            . venv/bin/activate
             python manage.py test
 
       - store_artifacts:
