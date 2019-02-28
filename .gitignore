@@ -3,3 +3,5 @@ geckodriver.log
 virtualenv
 __pycache__
 *.pyc
+mammoth2
+mammoth2.pub
